@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        
+         body{
+            background-image: url(bg1.jpg);
+            background-size: auto 150%;
+    background-repeat: no-repeat;
+        }
+        #register{
+            border: 2px solid rgb(89, 152, 172);
+            border-radius: 2rem;
+        }
+        #sign{
+            color: white;
+            background-color:  rgb(17, 32, 45);
+            width: 300px;
+            height: 500px;
+            padding-top: 10px;
+            padding-left: 20px;
+            border: 4px solid rgb(132, 179, 194);
+           margin-left: 425px;
+           margin-top: 100px;
+           border-radius: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="sign">
+        <h1>Registration Form</h1>
+        <form action="login.html">
+            <label for="name">Name</label>
+<input type="text" id="name" placeholder="Enter Name"><br><br>
+<label for="surname">Surname</label>
+<input id="surname" type="text" placeholder="Enter Surname"><br><br>
+<label for="date">Birth Date</label>
+<input id="date" type="date" min="1970-04-06" max="2024-03-02"><br>
+<p>Enter Gender</p>
+<label for="male">Male</label>
+<input type="radio" id="male" >
+<label for="female">Female</label>
+<input type="radio" id="female">
+<p>District</p>
+<select name="city" id="city">
+    <option value="Hydrabad">hydrabad</option>
+    <option selected value="Karachi">karachi</option>
+    <option value="Mirpurkhas">Mirpurkhas</option>
+    <option value="Sukhur">Sukhur</option>
+    <option value="Lahore">Lahore</option>
+    <option value="Islamabad">Islamabad</option>
+    <option value="larkana">larkana</option>
+</select><br><br>
+<label for="cv">Insert CV</label><br>
+<input id="cv" type="file" name="cv"> <br><br>
+<input type="checkbox" id="agree">
+<label for="agree">i do accept the <a href="https://navttc.gov.pk/">terms and conditions</a><br>of your site</label><br><br>
+<button id="register">Register</button>
+</form>
+    </div>
+</body>
+</html>
